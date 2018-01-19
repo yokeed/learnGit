@@ -8,7 +8,7 @@ git clone 地址 ：克隆远程仓库
 ----me
 --pretty=oneline（简洁显示格式）
 
-git reset --hard <head^>/<版本号> ：回退到上一个版本(或head~100)
+git reset --hard <head^>/<版本号> ：回退到上一个版本(或head~100 回退上100个版本)
 git status ：查看当前仓库状态
 git commit -m "注释" ：提交
 git add <文件1> <文件2> ... ：添加文件到暂存区
