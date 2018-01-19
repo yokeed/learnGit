@@ -24,3 +24,8 @@ git remote add origin(仓库名称) git@github.com:yokeed/repot.git   repot(远�
 推送到远程库
 git push -u origin master 把本地分支推送到远远程仓库origin master分支，-u把远程仓库master分支和和本地分支关联（第一次推送时）
 git push origin master 分支关联后不再需要-u参数
+git remote -v 查看远程库详细信息
+从远程库更新文件
+git fetch origin master 从远程库master分支更新代码到本地master分支
+git log -p 查看（更新）日志
+git merge origin/master 合并文件
