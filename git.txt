@@ -1,0 +1,26 @@
+git checkout <文件1> ：把文件1在工作区的修改全部撤销
+
+git rm 文件1 ：删除文件
+
+git clone 地址 ：克隆远程仓库
+
+
+----me
+--pretty=oneline（简洁显示格式）
+
+git reset --hard <head^>/<版本号> ：回退到上一个版本(或head~100)
+git status ：查看当前仓库状态
+git commit -m "注释" ：提交
+git add <文件1> <文件2> ... ：添加文件到暂存区
+git add . : 添加全部文件
+git add -A ：添加全部（仓库中的所有文件）
+git log: 查看历史记录
+git reglog --pretty=oneline(格式化): 查看历史记录的版本号id
+git init：初始化仓库（create repository）
+
+
+关联远程库
+git remote add origin(仓库名称) git@github.com:yokeed/repot.git   repot(远程仓库名)
+推送到远程库
+git push -u origin master 把本地分支推送到远远程仓库origin master分支，-u把远程仓库master分支和和本地分支关联（第一次推送时）
+git push origin master 分支关联后不再需要-u参数
