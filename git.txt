@@ -19,6 +19,14 @@ git reglog --pretty=oneline(格式化): 查看历史记录的版本号id
 git init：初始化仓库（create repository）
 
 
+clone
+git clone git@github.com:yokeed/仓库名.git
+如果第一次使用git
+检查~/.ssh目录下是否有id_rsa和id_rsa.pub文件
+如果没有
+ssh-keygen -t rsa -C "yokeed@163.com" 邮箱地址
+然后在github新建ssh key，把id_rsa的key复制过去即可。
+
 关联远程库
 git remote add origin(仓库名称) git@github.com:yokeed/repot.git   repot(远程仓库名)
 推送到远程库
